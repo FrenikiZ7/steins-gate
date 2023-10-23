@@ -1,0 +1,348 @@
+/*color: #ffb400; */
+
+/*____________________________Configurações globais____________________________*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+body, html{
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+/*____________________________Header___________________________*/
+
+div#header-container {
+  background-color: rgba(0, 0, 0, 0.746);
+  border: 2px solid rgba(255, 250, 217, 0.306);
+  color: white;
+  border-radius: 10px;
+
+  width: 90%;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#img-logo {
+  width: 180px;
+  padding-left: 10px;
+}
+
+div#change-theme {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.img-theme {
+  width: 60px;
+  margin-right: 10px;
+}
+
+
+/*____________________________Main + Newsletter____________________________*/
+
+section#main-section {
+  background-image: url('/steins-gate-images/background4.png');
+  background-position:  top center;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: 10px 10px  30px inset rgba(0, 0, 0, 0.635);
+
+  height: 628px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+div#newsletter {
+  transition: all 0.8s; 
+
+  background-color: rgba(0, 0, 0, 0.746);
+  border-radius: 20px;
+  border: 3px solid rgba(255, 250, 217, 0.736);
+  text-align: center;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  position: relative;
+  left: 5%;
+  top: 19%;
+  padding: 20px;
+
+  width: 25vw;
+  max-width: 400px;
+  min-width: 200px;
+
+  height: 40vh;
+  min-height: 350px;
+
+  color: white;
+}
+
+div#newsletter:hover {
+  background-color: rgba(0, 0, 0, 0.866);
+}
+
+input#email-newsletter {
+  background-color: rgb(255, 250, 217);
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+
+  padding: 10px; 
+  width: 85%;
+  max-width: 280px;
+}
+
+input#email-newsletter:hover {
+  background-color: rgb(255, 241, 150);
+}
+
+input#email-newsletter:active {
+  background-color: rgb(255, 236, 113);
+}
+
+button#button-newsletter {
+  background-color: rgb(255, 250, 217);
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+
+  padding: 9px;
+  width: 93%;
+  max-width: 300px;
+}
+
+button#button-newsletter:hover {
+  background-color: rgb(255, 241, 150);
+  transition: all 0.5s;
+}
+
+button#button-newsletter:active {
+  background-color: rgb(255, 235, 104);
+}
+
+
+/*_____________________________Informações do anime (história e personagens)____________________________*/
+
+section#anime-info {
+  background-color: #a59c8a;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+
+  padding: 20px;
+}
+
+div#story {
+  background-color: rgb(201, 197, 171);
+  border: 3px solid black;
+  border-radius: 10px;
+  font-weight: bold;
+
+  display: flex;
+  position: relative;
+
+  padding: 10px;
+  width: 80%;
+  
+}
+
+div#story-text {
+  display: flex;
+  flex-direction: column; 
+
+  margin-right: 190px;
+}
+
+div#story h1 {
+  font-variant: normal;
+  font-size: 34px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+div#story-image-mobile {
+  display: none;
+}
+
+div#story-image-pc img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  width: 15%;
+  min-width: 200px;
+  height: 400px;
+}
+
+div.characters {
+  background-color: #a59c8a;
+  border-radius: 10px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-areas: 
+  "image image image image"
+  "image image image image"
+  "image image image image";
+  
+  grid-gap: 45px 20px;
+  width: 81%;
+}
+
+div.character {
+  background-color: rgba(0, 0, 0, 0.423);
+  border-radius: 10px;
+  margin: 0 auto;
+  grid-area: "image";
+  
+  position: relative;
+  user-select: none;
+  width: 250px;
+  height: 300px;
+}
+
+div.character img {
+  transition: all 1s;
+  border-radius: 10px;
+  position: absolute;
+  width: 280px;
+  height: 335px;
+  bottom: 0;
+  right: 0;
+  user-select: none;
+}
+
+div.character img:hover {
+  transition: all 1s;
+  width: 300px;
+  height: 355px;
+}
+
+div.character:hover {
+  background-color: rgba(0, 0, 0, 0.674);
+  transition: all 0.5s;
+}
+
+.buttons {
+  background-color: rgba(0, 0, 0, 0.423);
+  color: rgb(201, 197, 171);
+  border-radius: 10px;
+  font-size: 65px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
+  user-select: none;
+}
+
+.buttons:hover {
+  background-color: rgba(0, 0, 0, 0.674);
+  transition: all 0.5s;
+}
+
+.buttons:active {
+  background-color: black;
+  transition: none;
+}
+
+
+
+
+@media screen and (max-width: 1350px)  {
+  div.characters {
+    grid-template-areas: 
+  "image image image"
+  "image image image"
+  "image image image";
+  }
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+  section#main-section {
+    background-position: right center;
+  }
+
+
+  div.characters {
+    grid-template-areas: 
+   "image image"
+   "image image"
+   "image image";
+  }
+}
+
+@media screen and (max-width: 730px) {
+
+  div#theme-container,p#theme-title {
+    display: none;
+ }
+
+ div#newsletter{
+   margin: 0 auto;
+   left: 0%;
+ }
+
+ div#story {
+  flex-direction: column;
+ } 
+
+ div#story-text {
+   display: flex;
+   flex-direction: column; 
+
+   margin-right: 0px;
+   margin-bottom: 120px;
+ }
+
+ div#story-image-mobile img {
+   position: absolute;
+   bottom: -45px;
+   right: 0;
+
+   width: 113%;
+   max-height: 200px;
+   min-height: 150px;
+ }
+
+ div#story-image-mobile {
+   display: block;
+ }
+
+
+ div#story-image-pc {
+   display: none;
+ }
+
+ div.characters {
+  grid-template-areas: 
+  "image"
+  "image"
+  "image";
+}
+}
