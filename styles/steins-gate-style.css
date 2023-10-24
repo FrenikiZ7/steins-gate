@@ -62,8 +62,8 @@ div#change-theme-mobile {
 /*____________________________Main + Newsletter____________________________*/
 
 section#main-section {
-  background-image: url('/steins-gate-images/background4.png');
-  background-position:  top center;
+  background-image: url("../steins-gate-images/background.png");
+  background-position: top center;
   background-size: cover;
   background-attachment: fixed;
   box-shadow: 10px 10px  30px inset rgba(0, 0, 0, 0.635);
