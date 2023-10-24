@@ -39,10 +39,18 @@ div#header-container {
   padding-left: 10px;
 }
 
+div#mobile-menu {
+  display: none;
+}
+
 div#change-theme {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+div#change-theme-mobile {
+  display: none;
 }
 
 .img-theme {
@@ -59,8 +67,6 @@ section#main-section {
   background-size: cover;
   background-attachment: fixed;
   box-shadow: 10px 10px  30px inset rgba(0, 0, 0, 0.635);
-
-  height: 628px;
   margin: 0 auto;
   padding: 10px;
 }
@@ -83,6 +89,7 @@ div#newsletter {
   left: 5%;
   top: 19%;
   padding: 20px;
+  margin: 180px 0px 20px;
 
   width: 35vw;
   max-width: 400px;
@@ -291,7 +298,6 @@ div.character:hover {
     background-position: right center;
   }
 
-
   div.characters {
     grid-template-areas: 
    "image image"
@@ -302,12 +308,69 @@ div.character:hover {
 
 @media screen and (max-width: 730px) {
 
-  div#theme-container,p#theme-title {
+
+
+ div#header-container {
+  flex-direction: center;
+ }
+
+ #img-logo {
+   width: 30%;
+   min-width: 100px;
+   padding-left: 10px;
+ }
+
+ div#change-theme {
     display: none;
  }
 
+ div#change-theme-mobile {
+   background-color: rgba(0, 0, 0, 0.746);
+   border: 3px solid rgba(255, 250, 217, 0.736);
+   color: white;
+   text-align: center;
+
+   display: none;
+   flex-direction: column;
+   gap: 15px;
+
+   padding: 10px;
+
+   margin: 50px auto;
+
+
+   border-radius: 10px;
+   width: 90%;
+ }
+
+ p#theme-title {
+  width: 100%;
+  font-size: 3.5vw;
+ }
+
+ div#icons {
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+ }
+
+ .img-theme-mobile {
+  width: 11%;
+  min-width: 50px ;
+ }
+
+ div#mobile-menu {
+  display: flex;
+  padding-right: 10px;
+ }
+
+ div#mobile-menu img {
+  width: 7vw;
+  min-width: 30px;
+ }
+
  div#newsletter{
-   margin: 0 auto;
+   margin: 40px auto;
    left: 0%;
  }
 
