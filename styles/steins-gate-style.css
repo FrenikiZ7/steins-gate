@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Comfortaa', sans-serif;
+  box-sizing: border-box;
 }
 
 body, html{
@@ -65,7 +66,7 @@ section#main-section {
 }
 
 div#newsletter {
-  transition: all 0.8s; 
+  transition: background-color 0.8s; 
 
   background-color: rgba(0, 0, 0, 0.746);
   border-radius: 20px;
@@ -83,12 +84,12 @@ div#newsletter {
   top: 19%;
   padding: 20px;
 
-  width: 25vw;
+  width: 35vw;
   max-width: 400px;
-  min-width: 200px;
+  min-width: 260px;
 
   height: 40vh;
-  min-height: 350px;
+  min-height: 380px;
 
   color: white;
 }
@@ -171,7 +172,7 @@ div#story-text {
   display: flex;
   flex-direction: column; 
 
-  margin-right: 190px;
+  margin-right: 197px;
 }
 
 div#story h1 {
@@ -205,11 +206,12 @@ div.characters {
   "image image image image"
   "image image image image";
   
-  grid-gap: 45px 20px;
+  grid-gap: 45px 15px;
   width: 81%;
 }
 
 div.character {
+  transition: all 0.5s;
   background-color: rgba(0, 0, 0, 0.423);
   border-radius: 10px;
   margin: 0 auto;
@@ -217,7 +219,7 @@ div.character {
   
   position: relative;
   user-select: none;
-  width: 250px;
+  width: 260px;
   height: 300px;
 }
 
@@ -225,8 +227,8 @@ div.character img {
   transition: all 1s;
   border-radius: 10px;
   position: absolute;
-  width: 280px;
-  height: 335px;
+  width: 270px;
+  height: 340px;
   bottom: 0;
   right: 0;
   user-select: none;
@@ -234,13 +236,14 @@ div.character img {
 
 div.character img:hover {
   transition: all 1s;
-  width: 300px;
-  height: 355px;
+  width: 290px;
+  height: 360px;
 }
 
 div.character:hover {
   background-color: rgba(0, 0, 0, 0.674);
-  transition: all 0.5s;
+  border: 3px solid #ffeecc;
+  transition: background-color 0.5s, border 0.2s;
 }
 
 .buttons {
@@ -270,7 +273,7 @@ div.character:hover {
 
 
 
-@media screen and (max-width: 1350px)  {
+@media screen and (max-width: 1377px)  {
   div.characters {
     grid-template-areas: 
   "image image image"
