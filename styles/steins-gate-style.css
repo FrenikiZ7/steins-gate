@@ -63,6 +63,7 @@ div#change-theme-mobile {
 
 section#main-section {
   background-image: url("../steins-gate-images/background.png");
+  background-color: black;
   background-position: top center;
   background-size: cover;
   background-attachment: fixed;
