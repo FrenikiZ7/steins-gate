@@ -18,6 +18,14 @@ h1 {
   font-variant: small-caps;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
 /*____________________________Header___________________________*/
 
 div#header-container {
@@ -47,10 +55,6 @@ div#change-theme {
   display: flex;
   align-items: center;
   gap: 20px;
-}
-
-div#change-theme-mobile {
-  display: none;
 }
 
 .img-theme {
@@ -90,7 +94,7 @@ div#newsletter {
   left: 5%;
   top: 19%;
   padding: 20px;
-  margin: 180px 0px 20px;
+  margin: 180px 0px 30px;
 
   width: 35vw;
   max-width: 400px;
@@ -204,6 +208,19 @@ div#story-image-pc img {
   height: 400px;
 }
 
+h1#title-characters {
+  color: rgb(201, 197, 171);
+  background-color: rgba(0, 0, 0, 0.423);
+  font-size: 40px;
+  
+  font-variant: none;
+  border-radius: 10px;
+  text-align: center;
+
+  padding: 10px;
+  width: 100%;
+}
+
 div.characters {
   background-color: #a59c8a;
   border-radius: 10px;
@@ -280,7 +297,6 @@ div.character:hover {
 
 
 
-
 @media screen and (max-width: 1377px)  {
   div.characters {
     grid-template-areas: 
@@ -310,6 +326,9 @@ div.character:hover {
 @media screen and (max-width: 730px) {
 
 
+ section#main-section {
+  /* background-attachment:scroll; */
+ }
 
  div#header-container {
   flex-direction: center;
@@ -331,7 +350,6 @@ div.character:hover {
    color: white;
    text-align: center;
 
-   display: none;
    flex-direction: column;
    gap: 15px;
 

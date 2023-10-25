@@ -6,8 +6,9 @@
   <title>Steins;Gate</title>
   <link rel="stylesheet" href="styles/steins-gate-style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap" rel="stylesheet">
+  <script src="scripts/script.js"></script>
 </head>
 <body>
 
@@ -32,13 +33,13 @@
           </div>
 
           <div id="mobile-menu">
-            <img src="steins-gate-images/menu/menu_white_36dp.svg" alt="" id="menu-icon">
+            <img src="steins-gate-images/menu/menu_white_36dp.svg" alt="" id="menu-icon" onclick="openMenu()">
           </div>
  
       </div>
 
 
-      <div id="change-theme-mobile">
+      <div id="change-theme-mobile" class="hide">
         <p id="theme-title">Escolha o tema:</p>
         <div id="icons">
           <img src="steins-gate-images/change-theme2.png" alt="" class="img-theme-mobile">
@@ -81,6 +82,7 @@
           </div>
       </div>
 
+      <h1 id="title-characters">Lab Members</h1>
 
       <div class="characters">
 
@@ -116,17 +118,10 @@
           <img src="steins-gate-images/characters/suzuha.png" alt="">
         </div>
 
-        
-
       </div>
       
-
-      <div id="characters-names">
-
-
-
-      </div>
     </section>
+
 
   </main>
 
