@@ -208,7 +208,7 @@ div#story-image-pc img {
   height: 400px;
 }
 
-h1#title-characters {
+h1.titles {
   color: rgb(201, 197, 171);
   background-color: rgba(0, 0, 0, 0.423);
   font-size: 40px;
@@ -293,6 +293,76 @@ div.character:hover {
 .buttons:active {
   background-color: black;
   transition: none;
+}
+
+section#wallpapers {
+  background-color: #a59c8a;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+div#wallpapers-container {
+  
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50vh;
+  width: 45vw;
+  box-shadow: 5px 10px 40px black;
+  border-radius: 10px;
+}
+
+div.buttons {
+  font: bold 40px sans-serif;
+  z-index: 1;
+  width: 50px;
+  color: transparent;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.8s;
+  user-select: none;
+}
+
+div.buttons:hover {
+  background-color: rgba(0, 0, 0, 0.350);
+  color: white;
+  transition: all 0.8s;
+}
+
+#previous {
+  border-radius: 10px 0px 0px 10px;
+}
+
+#next {
+  border-radius: 0px 10px 10px 0px;
+}
+
+div.images {
+  display: flex;
+  position: absolute;
+  width: 45vw;
+  height: 50vh;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.items {
+  transition: all 0.7s;
+}
+
+.items:first-child {
+  margin-left: -100%;
+}
+
+div.images img {
+  border-radius: 10px;
+  width: 45vw;
+  height: 50vh;
 }
 
 
