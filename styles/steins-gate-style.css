@@ -309,8 +309,10 @@ div#wallpapers-container {
   margin: 0 auto;
   flex-direction: row;
   justify-content: space-between;
+  height: 60vh;
+  max-width: 784px;
+  width: 55vw;
   height: 50vh;
-  width: 45vw;
   box-shadow: 5px 10px 40px black;
   border-radius: 10px;
 }
@@ -345,7 +347,8 @@ div.buttons:hover {
 div.images {
   display: flex;
   position: absolute;
-  width: 45vw;
+  width: 55vw;
+  max-width: 784px;
   height: 50vh;
   border-radius: 10px;
   overflow: hidden;
@@ -361,7 +364,8 @@ div.images {
 
 div.images img {
   border-radius: 10px;
-  width: 45vw;
+  width: 55vw;
+  max-width: 784px;
   height: 50vh;
 }
 
@@ -373,6 +377,21 @@ div.images img {
   "image image image"
   "image image image"
   "image image image";
+  }
+
+  div#wallpapers-container {
+    height: 45vh;
+    min-width: 684px;
+  }
+
+  div.images{
+    height: 45vh;
+    min-width: 684px;
+  }
+
+  div.images img{
+    height: 45vh;
+    min-width: 684px;
   }
 }
 
@@ -390,6 +409,21 @@ div.images img {
    "image image"
    "image image"
    "image image";
+  }
+
+  div#wallpapers-container {
+    height: 38vh;
+    min-width: 584px;
+  }
+
+  div.images{
+    height: 38vh;
+    min-width: 584px;
+  }
+
+  div.images img{
+    height: 38vh;
+    min-width: 584px;
   }
 }
 
@@ -500,4 +534,32 @@ div.images img {
   "image"
   "image";
 }
+ 
+ div#wallpapers-container {
+  height: 27vh;
+  
+
+  width: 70vw;
+  min-width: 0px;
+  max-width: 550px;
+ }
+
+ div.images{
+  height: 27vh;
+  
+
+  width: 70vw;
+  min-width: 0px;
+  max-width: 550px;
+ }
+
+ div.images img{
+  height: 27vh;
+
+
+  width: 70vw;
+  min-width: 0px;
+  max-width: 550px;
+ }
+
 }
