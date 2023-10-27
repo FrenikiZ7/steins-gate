@@ -6,10 +6,10 @@
   padding: 0;
   font-family: 'Comfortaa', sans-serif;
   box-sizing: border-box;
-  
 }
 
 body, html{
+  background-color: #a59c8a;
   width: 100%;
   height: 100%;
 }
@@ -31,13 +31,14 @@ h1 {
 
 div#header-container {
   background-color: rgba(0, 0, 0, 0.746);
-  border: 2px solid rgba(255, 250, 217, 0.306);
   color: white;
+  border: 2px solid rgba(255, 250, 217, 0.306);
   border-radius: 10px;
 
   width: 90%;
   height: 70px;
   margin: 0 auto;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -51,6 +52,7 @@ div#header-container {
 div#mobile-menu {
   display: none;
 }
+
 
 div#change-theme {
   display: flex;
@@ -310,9 +312,8 @@ div#wallpapers-container {
   margin: 0 auto;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 784px;
-  width: 55vw;
-  height: 400px;
+  width: 850px;
+  height: 500px;
   box-shadow: 5px 10px 40px black;
   border-radius: 10px;
 }
@@ -347,9 +348,8 @@ div.buttons:hover {
 div.images {
   display: flex;
   position: absolute;
-  width: 55vw;
-  max-width: 784px;
-  height: 400px;
+  width: 850px;
+  height: 500px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -364,11 +364,46 @@ div.images {
 
 div.images img {
   border-radius: 10px;
-  width: 55vw;
-  max-width: 784px;
-  height: 400px;
+  width: 850px;
+  height: 500px;
 }
 
+
+
+section#copyright {
+
+  background-color: rgba(0, 0, 0, 0.655);
+  color: rgba(255, 254, 254, 0.789);
+  text-align: center;
+
+  padding: 20px;
+  margin: 40px 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+}
+
+nav#contact {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+nav#contact a{
+  color: rgba(255, 254, 254, 0.789);
+  padding: 7px;
+  text-decoration: none;
+}
+
+nav#contact a:hover {
+  transition: all 0.7s;
+  background-color: black;
+  border-radius: 7px;
+}
 
 
 @media screen and (max-width: 1377px)  {
@@ -380,18 +415,18 @@ div.images img {
   }
 
   div#wallpapers-container {
-    height: 400px;
-    min-width: 684px;
+    width: 720px;
+    height: 400px;  
   }
 
   div.images{
-    height: 400px;
-    min-width: 684px;
+    width: 720px;
+    height: 400px; 
   }
 
   div.images img{
+    width: 720px;
     height: 400px;
-    min-width: 684px;
   }
 }
 
