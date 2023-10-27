@@ -8,20 +8,37 @@
   box-sizing: border-box;
 }
 
+
 body, html{
   background-color: #a59c8a;
   width: 100%;
   height: 100%;
 }
 
+
 h1 {
   font-weight: bold;
   font-variant: small-caps;
 }
 
+h1.titles {
+  color: rgb(201, 197, 171);
+  background-color: rgba(0, 0, 0, 0.423);
+  font-size: 40px;
+  
+  font-variant: none;
+  border-radius: 10px;
+  text-align: center;
+
+  padding: 10px;
+  width: 100%;
+}
+
+
 .hide {
   display: none;
 }
+
 
 .show {
   display: flex;
@@ -30,8 +47,8 @@ h1 {
 /*____________________________Header___________________________*/
 
 div#header-container {
-  background-color: rgba(0, 0, 0, 0.746);
   color: white;
+  background-color: rgba(0, 0, 0, 0.746);
   border: 2px solid rgba(255, 250, 217, 0.306);
   border-radius: 10px;
 
@@ -44,10 +61,12 @@ div#header-container {
   justify-content: space-between;
 }
 
+
 #img-logo {
   width: 180px;
   padding-left: 10px;
 }
+
 
 div#mobile-menu {
   display: none;
@@ -59,6 +78,7 @@ div#change-theme {
   align-items: center;
   gap: 20px;
 }
+
 
 .img-theme {
   width: 60px;
@@ -75,16 +95,19 @@ section#main-section {
   background-size: cover;
   background-attachment: fixed;
   box-shadow: 10px 10px  30px inset rgba(0, 0, 0, 0.635);
+
   margin: 0 auto;
   padding: 10px;
 }
 
+
 div#newsletter {
   transition: background-color 0.8s; 
 
+  color: white;
   background-color: rgba(0, 0, 0, 0.746);
-  border-radius: 20px;
   border: 3px solid rgba(255, 250, 217, 0.736);
+  border-radius: 20px;
   text-align: center;
  
   display: flex;
@@ -105,13 +128,12 @@ div#newsletter {
 
   height: 40vh;
   min-height: 380px;
-
-  color: white;
 }
 
 div#newsletter:hover {
   background-color: rgba(0, 0, 0, 0.866);
 }
+
 
 input#email-newsletter {
   background-color: rgb(255, 250, 217);
@@ -132,22 +154,23 @@ input#email-newsletter:active {
   background-color: rgb(255, 236, 113);
 }
 
+
 button#button-newsletter {
-  background-color: rgb(255, 250, 217);
   color: rgb(0, 0, 0);
+  background-color: rgb(255, 250, 217);
   border-radius: 10px;
   border: none;
   font-size: 20px;
   font-weight: bold;
 
-  padding: 9px;
   width: 93%;
   max-width: 300px;
+  padding: 9px;
 }
 
 button#button-newsletter:hover {
-  background-color: rgb(255, 241, 150);
   transition: all 0.5s;
+  background-color: rgb(255, 241, 150);
 }
 
 button#button-newsletter:active {
@@ -169,6 +192,7 @@ section#anime-info {
   padding: 20px;
 }
 
+
 div#story {
   background-color: rgb(201, 197, 171);
   border: 3px solid black;
@@ -180,8 +204,8 @@ div#story {
 
   padding: 10px;
   width: 80%;
-  
 }
+
 
 div#story-text {
   display: flex;
@@ -190,16 +214,20 @@ div#story-text {
   margin-right: 197px;
 }
 
+
 div#story h1 {
   font-variant: normal;
   font-size: 34px;
+
   display: flex;
   margin-bottom: 10px;
 }
 
+
 div#story-image-mobile {
   display: none;
 }
+
 
 div#story-image-pc img {
   position: absolute;
@@ -211,72 +239,73 @@ div#story-image-pc img {
   height: 400px;
 }
 
-h1.titles {
-  color: rgb(201, 197, 171);
-  background-color: rgba(0, 0, 0, 0.423);
-  font-size: 40px;
-  
-  font-variant: none;
-  border-radius: 10px;
-  text-align: center;
-
-  padding: 10px;
-  width: 100%;
-}
 
 div.characters {
   background-color: #a59c8a;
   border-radius: 10px;
+
   display: grid;
-  margin: 0 auto;
+  grid-gap: 45px 15px;
   grid-template-areas: 
   "image image image image"
   "image image image image"
   "image image image image";
-  
-  grid-gap: 45px 15px;
+
   width: 81%;
+  margin: 0 auto;
 }
+
 
 div.character {
   transition: all 0.5s;
+
   background-color: rgba(0, 0, 0, 0.423);
   border-radius: 10px;
-  margin: 0 auto;
+  
   grid-area: "image";
   
   position: relative;
-  user-select: none;
+
   width: 260px;
   height: 300px;
+  margin: 0 auto;
+  user-select: none;
 }
+
 
 div.character img {
   transition: all 1s;
+
   border-radius: 10px;
+
   position: absolute;
-  width: 270px;
-  height: 340px;
   bottom: 0;
   right: 0;
+  
+
+  width: 270px;
+  height: 340px;
   user-select: none;
 }
 
 div.character img:hover {
   transition: all 1s;
+
   width: 290px;
   height: 360px;
 }
 
 div.character:hover {
+  transition: background-color 0.5s, border 0.2s;
+
   background-color: rgba(0, 0, 0, 0.674);
   border: 3px solid #ffeecc;
-  transition: background-color 0.5s, border 0.2s;
 }
 
+
 .buttons {
-  background-color: rgba(0, 0, 0, 0.423);
   color: rgb(201, 197, 171);
+  background-color: rgba(0, 0, 0, 0.423);
   border-radius: 10px;
   font-size: 65px;
 
@@ -289,53 +318,62 @@ div.character:hover {
 }
 
 .buttons:hover {
-  background-color: rgba(0, 0, 0, 0.674);
   transition: all 0.5s;
+  background-color: rgba(0, 0, 0, 0.674);
 }
 
 .buttons:active {
-  background-color: black;
   transition: none;
+  background-color: black;
 }
 
 section#wallpapers {
   background-color: #a59c8a;
-  padding: 20px;
+
   display: flex;
   flex-direction: column;
   gap: 70px;
+
+  padding: 20px;
 }
+
 
 div#wallpapers-container {
-  
-  display: flex;
-  margin: 0 auto;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 850px;
-  height: 500px;
   box-shadow: 5px 10px 40px black;
   border-radius: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 850px;
+  height: 500px;
+  margin: 0 auto;
 }
 
+
 div.buttons {
-  font: bold 40px sans-serif;
-  z-index: 1;
-  width: 50px;
+  transition: all 0.8s;
+
   color: transparent;
   background-color: transparent;
+  font: bold 40px sans-serif;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.8s;
+
+  width: 50px;
+  z-index: 1;
   user-select: none;
 }
 
 div.buttons:hover {
-  background-color: rgba(0, 0, 0, 0.350);
-  color: white;
   transition: all 0.8s;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.350);
 }
+
 
 #previous {
   border-radius: 10px 0px 0px 10px;
@@ -345,25 +383,32 @@ div.buttons:hover {
   border-radius: 0px 10px 10px 0px;
 }
 
+
 div.images {
-  display: flex;
-  position: absolute;
-  width: 850px;
-  height: 500px;
   border-radius: 10px;
   overflow: hidden;
+
+  display: flex;
+  position: absolute;
+
+  width: 850px;
+  height: 500px;
 }
+
 
 .items {
   transition: all 0.7s;
 }
 
+
 .items:first-child {
   margin-left: -100%;
 }
 
+
 div.images img {
   border-radius: 10px;
+
   width: 850px;
   height: 500px;
 }
@@ -371,13 +416,9 @@ div.images img {
 
 
 section#copyright {
-
-  background-color: rgba(0, 0, 0, 0.655);
   color: rgba(255, 254, 254, 0.789);
+  background-color: rgba(0, 0, 0, 0.655);
   text-align: center;
-
-  padding: 20px;
-  margin: 40px 0px;
 
   display: flex;
   flex-direction: column;
@@ -385,7 +426,10 @@ section#copyright {
   align-items: center;
   gap: 30px;
 
+  padding: 20px;
+  margin: 40px 0px;
 }
+
 
 nav#contact {
   display: flex;
@@ -393,10 +437,11 @@ nav#contact {
   gap: 50px;
 }
 
+
 nav#contact a{
   color: rgba(255, 254, 254, 0.789);
-  padding: 7px;
   text-decoration: none;
+  padding: 7px;
 }
 
 nav#contact a:hover {
@@ -406,18 +451,23 @@ nav#contact a:hover {
 }
 
 
+
+
 @media screen and (max-width: 1377px)  {
+ 
   div.characters {
     grid-template-areas: 
-  "image image image"
-  "image image image"
-  "image image image";
+    "image image image"
+    "image image image"
+    "image image image";
   }
+
 
   div#wallpapers-container {
     width: 720px;
     height: 400px;  
   }
+
 
   div.images{
     width: 720px;
@@ -439,24 +489,28 @@ nav#contact a:hover {
     background-position: right center;
   }
 
+
   div.characters {
     grid-template-areas: 
-   "image image"
-   "image image"
-   "image image";
+    "image image"
+    "image image"
+    "image image";
   }
 
+  
   div#wallpapers-container {
     height: 350px;
     width: 585px;
     min-width: 0px;
   }
 
+
   div.images{
     height: 350px;
     width: 585px;
     min-width: 0px;
   }
+
 
   div.images img{
     height: 350px;
@@ -467,19 +521,14 @@ nav#contact a:hover {
 
 @media screen and (max-width: 730px) {
 
+  div#header-container {
+    flex-direction: center;
+  }
 
- section#main-section {
-  /* background-attachment:scroll; */
- }
-
- div#header-container {
-  flex-direction: center;
- }
-
- #img-logo {
-   width: 30%;
-   min-width: 100px;
-   padding-left: 10px;
+  #img-logo {
+    width: 30%;
+    min-width: 100px;
+    padding-left: 10px;
  }
 
  div#change-theme {
@@ -487,122 +536,138 @@ nav#contact a:hover {
  }
 
  div#change-theme-mobile {
+   color: white;
    background-color: rgba(0, 0, 0, 0.746);
    border: 3px solid rgba(255, 250, 217, 0.736);
-   color: white;
+   border-radius: 10px;
    text-align: center;
 
    flex-direction: column;
    gap: 15px;
-
-   padding: 10px;
-
-   margin: 50px auto;
-
-
-   border-radius: 10px;
+   
    width: 90%;
- }
-
- p#theme-title {
-  width: 100%;
-  font-size: 3.5vw;
- }
-
- div#icons {
-  display: flex;
-  justify-content: center;
-  gap: 3%;
- }
-
- .img-theme-mobile {
-  width: 11%;
-  min-width: 50px ;
- }
-
- div#mobile-menu {
-  display: flex;
-  padding-right: 15px;
- }
-
- div#mobile-menu img {
-  width: 7vw;
-  min-width: 30px;
- }
-
- div#newsletter{
-   margin: 40px auto;
-   left: 0%;
- }
-
- div#story {
-  flex-direction: column;
- } 
-
- div#story-text {
-   display: flex;
-   flex-direction: column; 
-
-   margin-right: 0px;
-   margin-bottom: 120px;
- }
-
- div#story-image-mobile img {
-   position: absolute;
-   bottom: -45px;
-   right: 0;
-
-   width: 113%;
-   max-height: 200px;
-   min-height: 150px;
- }
-
- div#story-image-mobile {
-   display: block;
- }
+   padding: 10px;
+   margin: 50px auto;
+  }
 
 
- div#story-image-pc {
-   display: none;
- }
+  p#theme-title {
+    font-size: 3.5vw;
+    width: 100%;
+  }
 
- div.characters {
-  grid-template-areas: 
-  "image"
-  "image"
-  "image";
-}
- 
- div#wallpapers-container {
-  height: 25vh;
-  min-height: 200px;
 
-  width: 70vw;
-  min-width: 0px;
-  max-width: 550px;
- }
+  div#icons {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+  }
 
- div.buttons {
-  width: 40px;
-  font: 30px;
- }
 
- div.images{
-  height: 25vh;
-  min-height: 200px;
+  .img-theme-mobile {
+    width: 11%;
+    min-width: 50px ;
+  }
 
-  width: 70vw;
-  min-width: 0px;
-  max-width: 550px;
- }
+  div#mobile-menu {
+    display: flex;
+    padding-right: 15px;
+  }
 
- div.images img{
-  height: 25vh;
-  min-height: 200px;
 
-  width: 70vw;
-  min-width: 0px;
-  max-width: 550px;
- }
+  div#mobile-menu img {
+    width: 7vw;
+    min-width: 30px;
+  }
+
+
+  div#newsletter{
+    margin: 40px auto;
+    left: 0%;
+  }
+
+
+  div#story {
+    flex-direction: column;
+  } 
+
+
+  div#story-text {
+    display: flex;
+    flex-direction: column; 
+
+    margin-right: 0px;
+    margin-bottom: 120px;
+  }
+
+
+  div#story-image-mobile img {
+    position: absolute;
+    bottom: -45px;
+    right: 0;
+
+    width: 113%;
+    max-height: 200px;
+    min-height: 150px;
+  }
+
+
+  div#story-image-mobile {
+    display: block;
+  }
+
+
+  div#story-image-pc {
+    display: none;
+  }
+
+  div.characters {
+    grid-template-areas: 
+    "image"
+    "image"
+    "image";
+  }
+  
+
+  div#wallpapers-container {
+    height: 25vh;
+    min-height: 200px;
+
+    width: 70vw;
+    min-width: 0px;
+    max-width: 550px;
+  }
+
+
+  div.buttons {
+    font-size: 30px;
+    width: 40px;
+  }
+
+
+  div.images{
+    height: 25vh;
+    min-height: 200px;
+
+    width: 70vw;
+    min-width: 0px;
+    max-width: 550px;
+  }
+
+
+  div.images img{
+    height: 25vh;
+    min-height: 200px;
+
+    width: 70vw;
+    min-width: 0px;
+    max-width: 550px;
+  }
+
+
+  nav#contact {
+    gap: 20px;
+  }
+
 
 }
