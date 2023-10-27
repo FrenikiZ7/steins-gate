@@ -1,5 +1,8 @@
 'use strict'
 
+
+
+
 function openMenu() {
   let menu = document.querySelector('div#change-theme-mobile')
   let icon = document.querySelector('img#menu-icon')
@@ -15,7 +18,11 @@ function openMenu() {
   }
 }
 
+
+
+
 const containerImages = document.querySelector('#images')
+
 
 const images = [
   {id: 1, 'url': 'steins-gate-images/Wallpapers/1.jpg'},
@@ -31,16 +38,18 @@ const images = [
 ]
 
 const loadImages = (images, containerImages) => {
-   images.forEach (image => {
-      containerImages.innerHTML += `
-       <div class='items'>
-         <img src='${image.url}'>
-       </div>
+ images.forEach (image => {
+    containerImages.innerHTML += `
+      <div class='items'>
+        <img src='${image.url}'>
+      </div>
       `
-    })
-  }
+  })
+}
+
 
 loadImages(images, containerImages);
+
 
 let items = document.querySelectorAll('.items')
 
@@ -48,6 +57,7 @@ const previousImage = () => {
   containerImages.appendChild(items[0])
   items = document.querySelectorAll('.items')
 }
+
 
 const nextImage = () => {
   const lastItem = items[items.length - 1]
