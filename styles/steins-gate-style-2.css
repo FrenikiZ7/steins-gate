@@ -1,0 +1,668 @@
+/*color: #ffb400; */
+
+/*____________________________Configurações globais____________________________*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa', sans-serif;
+  box-sizing: border-box;
+}
+
+
+body, html{
+  background-color: #C2C2C2;
+  width: 100%;
+  height: 100%;
+}
+
+
+h1 {
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+h1.titles {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.423);
+  font-size: 40px;
+  
+  font-variant: none;
+  border-radius: 10px;
+  text-align: center;
+
+  padding: 10px;
+  width: 100%;
+}
+
+
+.hide {
+  display: none;
+}
+
+
+.show {
+  display: flex;
+}
+
+/*____________________________Header___________________________*/
+
+div#header-container {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.746);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+
+  width: 90%;
+  height: 70px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+#img-logo {
+  width: 180px;
+  padding-left: 10px;
+}
+
+
+div#mobile-menu {
+  display: none;
+}
+
+
+div#change-theme {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.img-theme {
+  width: 60px;
+  margin-right: 10px;
+}
+
+
+/*____________________________Main + Newsletter____________________________*/
+
+section#main-section {
+  background-image: url("../steins-gate-images/background-2.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: 10px 10px  30px inset rgba(0, 0, 0, 0.635);
+
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
+div#newsletter {
+  transition: background-color 0.8s; 
+
+  color: white;
+  background-color: rgba(0, 0, 0, 0.746);
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  text-align: center;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  position: relative;
+  left: 5%;
+  top: 19%;
+  padding: 20px;
+  margin: 180px 0px 30px;
+
+  width: 35vw;
+  max-width: 400px;
+  min-width: 260px;
+
+  height: 40vh;
+  min-height: 380px;
+}
+
+div#newsletter:hover {
+  background-color: rgba(0, 0, 0, 0.866);
+}
+
+
+input#email-newsletter {
+  background-color: #C2C2C2;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+
+  padding: 10px; 
+  width: 85%;
+  max-width: 280px;
+}
+
+input#email-newsletter:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+input#email-newsletter:active {
+  background-color: #ffffff;
+}
+
+
+button#button-newsletter {
+  color: rgb(0, 0, 0);
+  background-color: #C2C2C2;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+
+  width: 93%;
+  max-width: 300px;
+  padding: 9px;
+}
+
+button#button-newsletter:hover {
+  transition: all 0.5s;
+  background-color: rgb(230, 230, 230);
+}
+
+button#button-newsletter:active {
+  background-color: #ffffff;
+}
+
+
+/*_____________________________Informações do anime (história e personagens)____________________________*/
+
+section#anime-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+
+  padding: 20px;
+}
+
+
+div#story {
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+  font-weight: bold;
+
+  display: flex;
+  position: relative;
+
+  padding: 10px;
+  width: 80%;
+}
+
+
+div#story-text {
+  display: flex;
+  flex-direction: column; 
+
+  margin-right: 197px;
+}
+
+
+div#story h1 {
+  font-variant: normal;
+  font-size: 34px;
+
+  display: flex;
+  margin-bottom: 10px;
+}
+
+
+div#story-image-mobile {
+  display: none;
+}
+
+
+div#story-image-pc img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  width: 15%;
+  min-width: 200px;
+  height: 400px;
+}
+
+
+div.characters {
+  border-radius: 10px;
+
+  display: grid;
+  grid-gap: 45px 15px;
+  grid-template-areas: 
+  "image image image image"
+  "image image image image"
+  "image image image image";
+
+  width: 81%;
+  margin: 0 auto;
+}
+
+
+div.character {
+  transition: all 0.5s;
+
+  background-color: rgba(0, 0, 0, 0.423);
+  border-radius: 10px;
+  
+  grid-area: "image";
+  
+  position: relative;
+
+  width: 260px;
+  height: 300px;
+  margin: 0 auto;
+  user-select: none;
+}
+
+
+div.character img {
+  transition: all 1s;
+
+  border-radius: 10px;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  
+
+  width: 270px;
+  height: 340px;
+  user-select: none;
+}
+
+div.character img:hover {
+  transition: all 1s;
+
+  width: 290px;
+  height: 360px;
+}
+
+div.character:hover {
+  transition: background-color 0.5s, border 0.2s;
+
+  background-color: rgba(0, 0, 0, 0.674);
+  border: 3px solid #ffffff;
+}
+
+
+.buttons {
+  color: rgb(201, 197, 171);
+  background-color: rgba(0, 0, 0, 0.423);
+  border-radius: 10px;
+  font-size: 65px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
+  user-select: none;
+}
+
+.buttons:hover {
+  transition: all 0.5s;
+  background-color: rgba(0, 0, 0, 0.674);
+}
+
+.buttons:active {
+  transition: none;
+  background-color: black;
+}
+
+section#wallpapers {
+
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+
+  padding: 20px;
+}
+
+
+div#wallpapers-container {
+  box-shadow: 5px 10px 40px black;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 850px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+
+div.buttons {
+  transition: all 0.8s;
+
+  color: transparent;
+  background-color: transparent;
+  font: bold 40px sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  z-index: 1;
+  user-select: none;
+}
+
+div.buttons:hover {
+  transition: all 0.8s;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.350);
+}
+
+
+#previous {
+  border-radius: 10px 0px 0px 10px;
+}
+
+#next {
+  border-radius: 0px 10px 10px 0px;
+}
+
+
+div.images {
+  border-radius: 10px;
+  overflow: hidden;
+
+  display: flex;
+  position: absolute;
+
+  width: 850px;
+  height: 500px;
+}
+
+
+.items {
+  transition: all 0.7s;
+}
+
+
+.items:first-child {
+  margin-left: -100%;
+}
+
+
+div.images img {
+  border-radius: 10px;
+
+  width: 850px;
+  height: 500px;
+}
+
+
+
+section#copyright {
+  color: rgba(255, 254, 254, 0.789);
+  background-color: rgba(0, 0, 0, 0.655);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  padding: 20px;
+  margin: 40px 0px;
+}
+
+
+nav#contact {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+
+nav#contact a{
+  color: rgba(255, 254, 254, 0.789);
+  text-decoration: none;
+  padding: 7px;
+}
+
+nav#contact a:hover {
+  transition: all 0.7s;
+  background-color: black;
+  border-radius: 7px;
+}
+
+
+
+
+@media screen and (max-width: 1377px)  {
+ 
+  div.characters {
+    grid-template-areas: 
+    "image image image"
+    "image image image"
+    "image image image";
+  }
+
+
+  div#wallpapers-container {
+    width: 720px;
+    height: 400px;  
+  }
+
+
+  div.images{
+    width: 720px;
+    height: 400px; 
+  }
+
+  div.images img{
+    width: 720px;
+    height: 400px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+  section#main-section {
+    background-position: right center;
+  }
+
+
+  div.characters {
+    grid-template-areas: 
+    "image image"
+    "image image"
+    "image image";
+  }
+
+  
+  div#wallpapers-container {
+    height: 350px;
+    width: 585px;
+    min-width: 0px;
+  }
+
+
+  div.images{
+    height: 350px;
+    width: 585px;
+    min-width: 0px;
+  }
+
+
+  div.images img{
+    height: 350px;
+    width: 585px;
+    min-width: 0px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+
+  div#header-container {
+    flex-direction: center;
+  }
+
+  #img-logo {
+    width: 30%;
+    min-width: 100px;
+    padding-left: 10px;
+ }
+
+ div#change-theme {
+    display: none;
+ }
+
+ div#change-theme-mobile {
+   color: white;
+   background-color: rgba(0, 0, 0, 0.746);
+   border: 3px solid rgba(255, 250, 217, 0.736);
+   border-radius: 10px;
+   text-align: center;
+
+   flex-direction: column;
+   gap: 15px;
+   
+   width: 90%;
+   padding: 10px;
+   margin: 50px auto;
+  }
+
+
+  p#theme-title {
+    font-size: 3.5vw;
+    width: 100%;
+  }
+
+
+  div#icons {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+  }
+
+
+  .img-theme-mobile {
+    width: 11%;
+    min-width: 50px ;
+  }
+
+  div#mobile-menu {
+    display: flex;
+    padding-right: 15px;
+  }
+
+
+  div#mobile-menu img {
+    width: 7vw;
+    min-width: 30px;
+  }
+
+
+  div#newsletter{
+    margin: 40px auto;
+    left: 0%;
+  }
+
+
+  div#story {
+    flex-direction: column;
+  } 
+
+
+  div#story-text {
+    display: flex;
+    flex-direction: column; 
+
+    margin-right: 0px;
+    margin-bottom: 120px;
+  }
+
+
+  div#story-image-mobile img {
+    position: absolute;
+    bottom: -45px;
+    right: 0;
+
+    width: 113%;
+    max-height: 200px;
+    min-height: 150px;
+  }
+
+
+  div#story-image-mobile {
+    display: block;
+  }
+
+
+  div#story-image-pc {
+    display: none;
+  }
+
+  div.characters {
+    grid-template-areas: 
+    "image"
+    "image"
+    "image";
+  }
+  
+
+  div#wallpapers-container {
+    height: 25vh;
+    min-height: 200px;
+
+    width: 70vw;
+    min-width: 0px;
+    max-width: 550px;
+  }
+
+
+  div.buttons {
+    font-size: 30px;
+    width: 40px;
+  }
+
+
+  div.images{
+    height: 25vh;
+    min-height: 200px;
+
+    width: 70vw;
+    min-width: 0px;
+    max-width: 550px;
+  }
+
+
+  div.images img{
+    height: 25vh;
+    min-height: 200px;
+
+    width: 70vw;
+    min-width: 0px;
+    max-width: 550px;
+  }
+
+
+  nav#contact {
+    gap: 20px;
+  }
+
+
+}
