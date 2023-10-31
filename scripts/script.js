@@ -6,6 +6,7 @@
 function openMenu() {
   let menu = document.querySelector('div#change-theme-mobile')
   let icon = document.querySelector('img#menu-icon')
+  let changeThemeMobile = document.querySelector('div#change-theme-mobile')
 
   if (menu.classList.contains('hide')) {
     menu.classList.remove('hide')
@@ -65,5 +66,52 @@ const nextImage = () => {
   items = document.querySelectorAll('.items')
 }
 
+
 const next = document.querySelector('#next').addEventListener('click', nextImage)
 const previous = document.querySelector('#previous').addEventListener('click', previousImage)
+
+
+function changeTheme(e) {
+
+  let body = document.querySelector('body')
+  let background = document.querySelector('section.main-section')
+  let titles = document.querySelectorAll('h1.titles')
+  let header = document.querySelector('div#header-container')
+  let newsletter = document.querySelector('div#newsletter')
+  let emailNewsletter = document.querySelector('input#email-newsletter')
+  let buttonNewsletter = document.querySelector('button#button-newsletter')
+  let story = document.querySelector('div#story')
+
+  let item = e.target
+  console.log(item.id)
+
+  if (item.id === 'theme-2') {
+
+    body.style.background = '#C2C2C2'
+    background.style.background = 'url("../steins-gate-images/background-2.jpg") no-repeat top center fixed'
+    header.style.border = 'solid 2px white'
+    newsletter.style.border = 'solid 3px white'
+    emailNewsletter.style.background = 'white'
+    buttonNewsletter.style.background = 'white'
+    story.style.background = 'white'
+
+    titles.forEach (title => {
+      title.style.color = 'white'
+    })
+  } else if (item.id === 'theme-1') {
+
+    body.style.background = '#a59c8a'
+    background.style.  = 'url("../steins-gate-images/background.png") no-repeat top center fixed'
+    header.style.border = 'solid 2px rgba(255, 250, 217, 0.306)'
+    newsletter.style.border = 'solid 3px rgba(255, 250, 217, 0.736)'
+    emailNewsletter.style.background = 'rgb(255, 250, 217)'
+    buttonNewsletter.style.background = 'rgb(255, 250, 217)'
+    story.style.background = 'rgb(201, 197, 171)'
+    titles.forEach (title => {
+      title.style.color = 'white'
+    })
+
+  }
+}
+
+const themeButtons = document.querySelector('.icons').addEventListener('click', changeTheme)

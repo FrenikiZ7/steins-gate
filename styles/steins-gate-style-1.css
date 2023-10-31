@@ -9,8 +9,8 @@
 }
 
 
-body, html{
-  background-color: #a59c8a;
+body#body,html{
+  background: #a59c8a;
   width: 100%;
   height: 100%;
 }
@@ -23,7 +23,7 @@ h1 {
 
 h1.titles {
   color: rgb(201, 197, 171);
-  background-color: rgba(0, 0, 0, 0.423);
+  background: rgba(0, 0, 0, 0.423);
   font-size: 40px;
   
   font-variant: none;
@@ -48,7 +48,7 @@ h1.titles {
 
 div#header-container {
   color: white;
-  background-color: rgba(0, 0, 0, 0.746);
+  background: rgba(0, 0, 0, 0.746);
   border: 2px solid rgba(255, 250, 217, 0.306);
   border-radius: 10px;
 
@@ -84,28 +84,21 @@ div#change-theme {
   width: 60px;
   margin-right: 10px;
 }
-
-
 /*____________________________Main + Newsletter____________________________*/
 
-section#main-section {
-  background-image: url("../steins-gate-images/background.png");
-  background-color: black;
-  background-position: top center;
+section.main-section {
+  background: url("../steins-gate-images/background.png") no-repeat top center fixed;
   background-size: cover;
-  background-attachment: fixed;
   box-shadow: 10px 10px  30px inset rgba(0, 0, 0, 0.635);
-
   margin: 0 auto;
   padding: 10px;
 }
 
-
 div#newsletter {
-  transition: background-color 0.8s; 
+  transition: background 0.8s; 
 
   color: white;
-  background-color: rgba(0, 0, 0, 0.746);
+  background: rgba(0, 0, 0, 0.746);
   border: 3px solid rgba(255, 250, 217, 0.736);
   border-radius: 20px;
   text-align: center;
@@ -131,12 +124,12 @@ div#newsletter {
 }
 
 div#newsletter:hover {
-  background-color: rgba(0, 0, 0, 0.866);
+  background: rgba(0, 0, 0, 0.866);
 }
 
 
 input#email-newsletter {
-  background-color: rgb(255, 250, 217);
+  background: rgb(255, 250, 217);
   border-radius: 10px;
   border: none;
   font-weight: bold;
@@ -147,17 +140,17 @@ input#email-newsletter {
 }
 
 input#email-newsletter:hover {
-  background-color: rgb(255, 241, 150);
+  background: rgb(255, 241, 150);
 }
 
 input#email-newsletter:active {
-  background-color: rgb(255, 236, 113);
+  background: rgb(255, 236, 113);
 }
 
 
 button#button-newsletter {
   color: rgb(0, 0, 0);
-  background-color: rgb(255, 250, 217);
+  background: rgb(255, 250, 217);
   border-radius: 10px;
   border: none;
   font-size: 20px;
@@ -170,19 +163,17 @@ button#button-newsletter {
 
 button#button-newsletter:hover {
   transition: all 0.5s;
-  background-color: rgb(255, 241, 150);
+  background: rgb(255, 241, 150);
 }
 
 button#button-newsletter:active {
-  background-color: rgb(255, 235, 104);
+  background: rgb(255, 235, 104);
 }
 
 
 /*_____________________________Informações do anime (história e personagens)____________________________*/
 
 section#anime-info {
-  background-color: #a59c8a;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,7 +232,6 @@ div#story-image-pc img {
 
 
 div.characters {
-  background-color: #a59c8a;
   border-radius: 10px;
 
   display: grid;
@@ -259,7 +249,7 @@ div.characters {
 div.character {
   transition: all 0.5s;
 
-  background-color: rgba(0, 0, 0, 0.423);
+  background: rgba(0, 0, 0, 0.423);
   border-radius: 10px;
   
   grid-area: "image";
@@ -296,16 +286,15 @@ div.character img:hover {
 }
 
 div.character:hover {
-  transition: background-color 0.5s, border 0.2s;
-
-  background-color: rgba(0, 0, 0, 0.674);
-  border: 3px solid #ffeecc;
+  transition: background 0.5s, border 0.2s;
+  background: rgba(0, 0, 0, 0.674);
+  border: 3px solid white;
 }
 
 
 .buttons {
   color: rgb(201, 197, 171);
-  background-color: rgba(0, 0, 0, 0.423);
+  background: rgba(0, 0, 0, 0.423);
   border-radius: 10px;
   font-size: 65px;
 
@@ -319,17 +308,15 @@ div.character:hover {
 
 .buttons:hover {
   transition: all 0.5s;
-  background-color: rgba(0, 0, 0, 0.674);
+  background: rgba(0, 0, 0, 0.674);
 }
 
 .buttons:active {
   transition: none;
-  background-color: black;
+  background: black;
 }
 
 section#wallpapers {
-  background-color: #a59c8a;
-
   display: flex;
   flex-direction: column;
   gap: 70px;
@@ -356,7 +343,7 @@ div.buttons {
   transition: all 0.8s;
 
   color: transparent;
-  background-color: transparent;
+  background: transparent;
   font: bold 40px sans-serif;
 
   display: flex;
@@ -371,7 +358,7 @@ div.buttons {
 div.buttons:hover {
   transition: all 0.8s;
   color: white;
-  background-color: rgba(0, 0, 0, 0.350);
+  background: rgba(0, 0, 0, 0.350);
 }
 
 
@@ -417,7 +404,7 @@ div.images img {
 
 section#copyright {
   color: rgba(255, 254, 254, 0.789);
-  background-color: rgba(0, 0, 0, 0.655);
+  background: rgba(0, 0, 0, 0.655);
   text-align: center;
 
   display: flex;
@@ -446,7 +433,7 @@ nav#contact a{
 
 nav#contact a:hover {
   transition: all 0.7s;
-  background-color: black;
+  background: black;
   border-radius: 7px;
 }
 
@@ -485,7 +472,7 @@ nav#contact a:hover {
 
 @media screen and (max-width: 1024px) {
 
-  section#main-section {
+  section.main-section {
     background-position: right center;
   }
 
@@ -537,7 +524,7 @@ nav#contact a:hover {
 
  div#change-theme-mobile {
    color: white;
-   background-color: rgba(0, 0, 0, 0.746);
+   background: rgba(0, 0, 0, 0.746);
    border: 3px solid rgba(255, 250, 217, 0.736);
    border-radius: 10px;
    text-align: center;
@@ -557,7 +544,7 @@ nav#contact a:hover {
   }
 
 
-  div#icons {
+  div.icons {
     display: flex;
     justify-content: center;
     gap: 3%;
