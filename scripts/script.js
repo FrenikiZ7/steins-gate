@@ -4,18 +4,15 @@
 
 
 function openMenu() {
-  let menu = document.querySelector('div#change-theme-mobile')
+  let menu = document.querySelector('div.change-theme-mobile')
   let icon = document.querySelector('img#menu-icon')
-  let changeThemeMobile = document.querySelector('div#change-theme-mobile')
 
-  if (menu.classList.contains('hide')) {
-    menu.classList.remove('hide')
-    menu.classList.add('show')
-    icon.src = 'steins-gate-images/menu/close_white_36dp.svg'
-  } else {
+  if (menu.classList.contains('show')) {
     menu.classList.remove('show')
-    menu.classList.add('hide')
     icon.src = 'steins-gate-images/menu/menu_white_36dp.svg'
+  } else {
+    menu.classList.add('show')
+    icon.src ='steins-gate-images/menu/close_white_36dp.svg'
   }
 }
 
@@ -73,8 +70,10 @@ const previous = document.querySelector('#previous').addEventListener('click', p
 
 function changeTheme(e) {
 
+  let item = e.target
+
   let body = document.querySelector('body')
-  let background = document.querySelector('section.main-section')
+  let background = document.querySelector('section.main-section-gold')
   let titles = document.querySelectorAll('h1.titles')
   let header = document.querySelector('div#header-container')
   let newsletter = document.querySelector('div#newsletter')
@@ -82,31 +81,34 @@ function changeTheme(e) {
   let buttonNewsletter = document.querySelector('button#button-newsletter')
   let story = document.querySelector('div#story')
 
-  let item = e.target
-  console.log(item.id)
+  let changeThemeMobile = document.querySelector('div.change-theme-mobile')
 
-  if (item.id === 'theme-2') {
+  if (item.id === 'theme-1') {
+    
+    background.classList.remove('main-section-white')
+
+    body.style.background = ''
+    header.style.border = ''
+    newsletter.style.border = ''
+    emailNewsletter.style.background = ''
+    buttonNewsletter.style.background = ''
+    story.style.background = ''
+    changeThemeMobile.style.border = ''
+    titles.style.color = ''
+    
+  } else if (item.id === 'theme-2') {
+
+    background.classList.add('main-section-white')
 
     body.style.background = '#C2C2C2'
-    background.style.background = 'url("../steins-gate-images/background-2.jpg") no-repeat top center fixed'
     header.style.border = 'solid 2px white'
     newsletter.style.border = 'solid 3px white'
     emailNewsletter.style.background = 'white'
     buttonNewsletter.style.background = 'white'
     story.style.background = 'white'
 
-    titles.forEach (title => {
-      title.style.color = 'white'
-    })
-  } else if (item.id === 'theme-1') {
+    changeThemeMobile.style.border = 'solid 3px white'
 
-    body.style.background = '#a59c8a'
-    background.style.  = 'url("../steins-gate-images/background.png") no-repeat top center fixed'
-    header.style.border = 'solid 2px rgba(255, 250, 217, 0.306)'
-    newsletter.style.border = 'solid 3px rgba(255, 250, 217, 0.736)'
-    emailNewsletter.style.background = 'rgb(255, 250, 217)'
-    buttonNewsletter.style.background = 'rgb(255, 250, 217)'
-    story.style.background = 'rgb(201, 197, 171)'
     titles.forEach (title => {
       title.style.color = 'white'
     })
@@ -114,4 +116,10 @@ function changeTheme(e) {
   }
 }
 
-const themeButtons = document.querySelector('.icons').addEventListener('click', changeTheme)
+const themeButtons = document.querySelectorAll('.icons')
+
+themeButtons.forEach (button => {
+  button.addEventListener('click', changeTheme)
+})
+
+

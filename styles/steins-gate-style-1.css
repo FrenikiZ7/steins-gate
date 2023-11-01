@@ -34,22 +34,13 @@ h1.titles {
   width: 100%;
 }
 
-
-.hide {
-  display: none;
-}
-
-
-.show {
-  display: flex;
-}
-
 /*____________________________Header___________________________*/
 
 div#header-container {
   color: white;
   background: rgba(0, 0, 0, 0.746);
-  border: 2px solid rgba(255, 250, 217, 0.306);
+  /*border: 2px solid rgba(255, 250, 217, 0.306); */
+  border: 2px solid #fffad9bc;
   border-radius: 10px;
 
   width: 90%;
@@ -79,15 +70,49 @@ div#change-theme {
   gap: 20px;
 }
 
+div.change-theme-mobile {
+  display: none;
+}
 
 .img-theme {
+  transition: all 0.5s;
+  padding: 1px;
   width: 60px;
   margin-right: 10px;
+  border-radius: 5px;
+}
+
+img#theme-1:hover {
+  transition: all 0.5s;
+  background-color: #ffffff5c;
+}
+
+img#theme-1:active {
+  transition: none;
+  background-color: #ffffffa0;
+}
+
+img#theme-2:hover {
+  transition: all 0.5s;
+  background-color: #ffdd8850;
+}
+
+img#theme-2:active {
+  transition: none;
+  background-color: #ffdd8897;
 }
 /*____________________________Main + Newsletter____________________________*/
 
-section.main-section {
+section.main-section-gold {
   background: url("../steins-gate-images/background.png") no-repeat top center fixed;
+  background-size: cover;
+  box-shadow: 10px 10px  30px inset rgba(0, 0, 0, 0.635);
+  margin: 0 auto;
+  padding: 10px;
+}
+
+section.main-section-white {
+  background: url("../steins-gate-images/background-2.jpg") no-repeat center center fixed;
   background-size: cover;
   box-shadow: 10px 10px  30px inset rgba(0, 0, 0, 0.635);
   margin: 0 auto;
@@ -99,7 +124,7 @@ div#newsletter {
 
   color: white;
   background: rgba(0, 0, 0, 0.746);
-  border: 3px solid rgba(255, 250, 217, 0.736);
+  border: 3px solid #fffad9bc;
   border-radius: 20px;
   text-align: center;
  
@@ -129,7 +154,7 @@ div#newsletter:hover {
 
 
 input#email-newsletter {
-  background: rgb(255, 250, 217);
+  background: #fffad9;
   border-radius: 10px;
   border: none;
   font-weight: bold;
@@ -150,7 +175,7 @@ input#email-newsletter:active {
 
 button#button-newsletter {
   color: rgb(0, 0, 0);
-  background: rgb(255, 250, 217);
+  background: #fffad9;
   border-radius: 10px;
   border: none;
   font-size: 20px;
@@ -185,7 +210,7 @@ section#anime-info {
 
 
 div#story {
-  background-color: rgb(201, 197, 171);
+  background-color: #c9c5ab;
   border: 3px solid black;
   border-radius: 10px;
   font-weight: bold;
@@ -442,6 +467,7 @@ nav#contact a:hover {
 
 @media screen and (max-width: 1377px)  {
  
+  
   div.characters {
     grid-template-areas: 
     "image image image"
@@ -472,8 +498,12 @@ nav#contact a:hover {
 
 @media screen and (max-width: 1024px) {
 
-  section.main-section {
+  section.main-section-gold {
     background-position: right center;
+  }
+
+  section.main-section-white {
+    background-position: center center;
   }
 
 
@@ -522,10 +552,14 @@ nav#contact a:hover {
     display: none;
  }
 
- div#change-theme-mobile {
+ div.show {
+  display: flex;
+}
+
+ div.change-theme-mobile {
    color: white;
    background: rgba(0, 0, 0, 0.746);
-   border: 3px solid rgba(255, 250, 217, 0.736);
+   border: 3px solid #fffad9bc;
    border-radius: 10px;
    text-align: center;
 
@@ -533,6 +567,7 @@ nav#contact a:hover {
    gap: 15px;
    
    width: 90%;
+   min-width: 245px;
    padding: 10px;
    margin: 50px auto;
   }
@@ -552,8 +587,10 @@ nav#contact a:hover {
 
 
   .img-theme-mobile {
-    width: 11%;
-    min-width: 50px ;
+    width: 13%;
+    border-radius: 5px;
+    padding: 3px;
+    min-width: 60px ;
   }
 
   div#mobile-menu {
@@ -568,9 +605,21 @@ nav#contact a:hover {
   }
 
 
+  section.main-section-gold {
+    background-position:  center right 5%;
+  }
+
+  section.main-section-white {
+    background-position: center center;
+  }
+
+
   div#newsletter{
     margin: 40px auto;
     left: 0%;
+    width: 75%;
+    min-width: 245px;
+    max-width: 450px;
   }
 
 
