@@ -563,7 +563,7 @@ nav#contact a:hover {
    border-radius: 10px;
    text-align: center;
 
-   flex-direction: column;
+   flex-direction: column; 
    gap: 15px;
    
    width: 90%;
