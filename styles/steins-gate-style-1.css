@@ -32,6 +32,7 @@ h1.titles {
 
   padding: 10px;
   width: 100%;
+  margin: 0 auto;
 }
 
 /*____________________________Header___________________________*/
@@ -294,6 +295,7 @@ div.character {
   height: 300px;
   margin: 0 auto;
   user-select: none;
+  
 }
 
 
@@ -451,6 +453,10 @@ section#copyright {
   margin: 40px 0px;
 }
 
+p#text-copyright {
+  padding: 10px;
+}
+
 
 nav#contact {
   display: flex;
@@ -546,6 +552,11 @@ nav#contact a:hover {
 }
 
 @media screen and (max-width: 730px) {
+
+
+  h1.titles {
+    font-size: 30px;
+  }
 
   div#header-container {
     flex-direction: center;
@@ -671,6 +682,26 @@ nav#contact a:hover {
     "image"
     "image"
     "image";
+
+    width: 60%;
+    margin-top: -50px;
+    min-width: 230px ;
+    gap: 40px;
+  }
+
+  div.character {
+    width: 230px;
+    height: 275px; 
+  }
+
+  div.character img {
+    width: 240px;
+    height: 300px;
+  }
+
+  div.character img:hover {
+    width: 260px;
+    height: 320px;
   }
   
 
@@ -709,9 +740,18 @@ nav#contact a:hover {
     max-width: 550px;
   }
 
-
   nav#contact {
+    display: flex;
+    flex-direction: row;
     gap: 20px;
+  }
+  
+  
+  nav#contact a{
+    font-size: 14px;
+    color: rgba(255, 254, 254, 0.789);
+    text-decoration: none;
+    padding: 7px;
   }
 
 
