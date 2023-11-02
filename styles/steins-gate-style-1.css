@@ -22,7 +22,7 @@ h1 {
 }
 
 h1.titles {
-  color: rgb(201, 197, 171);
+  color: #c9c5ab;
   background: rgba(0, 0, 0, 0.423);
   font-size: 40px;
   
@@ -154,7 +154,6 @@ div#newsletter:hover {
 
 
 input#email-newsletter {
-  background: #fffad9;
   border-radius: 10px;
   border: none;
   font-weight: bold;
@@ -164,18 +163,8 @@ input#email-newsletter {
   max-width: 280px;
 }
 
-input#email-newsletter:hover {
-  background: rgb(255, 241, 150);
-}
-
-input#email-newsletter:active {
-  background: rgb(255, 236, 113);
-}
-
-
 button#button-newsletter {
   color: rgb(0, 0, 0);
-  background: #fffad9;
   border-radius: 10px;
   border: none;
   font-size: 20px;
@@ -186,14 +175,34 @@ button#button-newsletter {
   padding: 9px;
 }
 
-button#button-newsletter:hover {
-  transition: all 0.5s;
-  background: rgb(255, 241, 150);
+.gold-color {
+  background: #fffad9;
 }
 
-button#button-newsletter:active {
-  background: rgb(255, 235, 104);
+.gold-color:hover {
+  transition: all 0.5s;
+  background: #fff196;
 }
+
+.gold-color:active {
+  background: #ffec71;
+}
+
+
+
+.white-color {
+  background:#C2C2C2;
+}
+
+.white-color:hover {
+  transition: all 0.5s;
+  background:#e6e6e6;
+}
+
+.white-color:active {
+  background: #ffffff;
+}
+
 
 
 /*_____________________________Informações do anime (história e personagens)____________________________*/

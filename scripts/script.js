@@ -1,7 +1,7 @@
 'use strict'
 
 
-
+// ----------------------------------Menu hambúrguer----------------------------------
 
 function openMenu() {
   let menu = document.querySelector('div.change-theme-mobile')
@@ -18,6 +18,9 @@ function openMenu() {
 
 
 
+
+
+// ----------------------------------Wallpapers slider----------------------------------
 
 const containerImages = document.querySelector('#images')
 
@@ -68,6 +71,10 @@ const next = document.querySelector('#next').addEventListener('click', nextImage
 const previous = document.querySelector('#previous').addEventListener('click', previousImage)
 
 
+
+
+
+// ----------------------------------Alterar o tema do site ----------------------------------
 function changeTheme(e) {
 
   let item = e.target
@@ -80,9 +87,9 @@ function changeTheme(e) {
   let emailNewsletter = document.querySelector('input#email-newsletter')
   let buttonNewsletter = document.querySelector('button#button-newsletter')
   let story = document.querySelector('div#story')
-
   let changeThemeMobile = document.querySelector('div.change-theme-mobile')
 
+  
   if (item.id === 'theme-1') {
     
     background.classList.remove('main-section-white')
@@ -90,22 +97,31 @@ function changeTheme(e) {
     body.style.background = ''
     header.style.border = ''
     newsletter.style.border = ''
-    emailNewsletter.style.background = ''
-    buttonNewsletter.style.background = ''
+    
+
+    emailNewsletter.classList.remove('white-color')
+    buttonNewsletter.classList.remove('white-color')
+
     story.style.background = ''
     changeThemeMobile.style.border = ''
-    titles.style.color = ''
     
-  } else if (item.id === 'theme-2') {
+    titles.forEach (title => {
+      title.style.color = '#c9c5ab'
+    })
+    
+  } 
+
+  else if (item.id === 'theme-2') {
 
     background.classList.add('main-section-white')
 
     body.style.background = '#C2C2C2'
     header.style.border = 'solid 2px white'
     newsletter.style.border = 'solid 3px white'
-    emailNewsletter.style.background = 'white'
-    buttonNewsletter.style.background = 'white'
     story.style.background = 'white'
+
+    emailNewsletter.classList.add('white-color')
+    buttonNewsletter.classList.add('white-color')
 
     changeThemeMobile.style.border = 'solid 3px white'
 
