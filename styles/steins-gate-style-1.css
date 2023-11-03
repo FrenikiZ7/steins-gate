@@ -81,6 +81,7 @@ div.change-theme-mobile {
   width: 60px;
   margin-right: 10px;
   border-radius: 5px;
+  user-select: none;
 }
 
 img#theme-1:hover {
