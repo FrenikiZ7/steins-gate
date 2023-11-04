@@ -1,6 +1,7 @@
 /*color: #ffb400; */
 
 /*____________________________Configurações globais____________________________*/
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +10,7 @@
 }
 
 
-body#body,html{
+body,html{
   background: #a59c8a;
   width: 100%;
   height: 100%;
@@ -40,7 +41,6 @@ h1.titles {
 div#header-container {
   color: white;
   background: rgba(0, 0, 0, 0.746);
-  /*border: 2px solid rgba(255, 250, 217, 0.306); */
   border: 2px solid #fffad9bc;
   border-radius: 10px;
 
@@ -64,6 +64,10 @@ div#mobile-menu {
   display: none;
 }
 
+div.change-theme-mobile {
+  display: none;
+}
+
 
 div#change-theme {
   display: flex;
@@ -71,18 +75,17 @@ div#change-theme {
   gap: 20px;
 }
 
-div.change-theme-mobile {
-  display: none;
-}
 
 .img-theme {
   transition: all 0.5s;
-  padding: 1px;
-  width: 60px;
-  margin-right: 10px;
   border-radius: 5px;
+
+  width: 60px;
+  padding: 1px;
+  margin-right: 10px;
   user-select: none;
 }
+
 
 img#theme-1:hover {
   transition: all 0.5s;
@@ -93,6 +96,7 @@ img#theme-1:active {
   transition: none;
   background-color: #ffffffa0;
 }
+
 
 img#theme-2:hover {
   transition: all 0.5s;
@@ -108,18 +112,22 @@ img#theme-2:active {
 section.main-section-gold {
   background: url("../steins-gate-images/background.png") no-repeat top center fixed;
   background-size: cover;
-  box-shadow: 10px 10px  30px inset rgba(0, 0, 0, 0.635);
+  box-shadow: 10px 10px  30px inset #000000a2;
+
   margin: 0 auto;
   padding: 10px;
 }
 
+
 section.main-section-white {
   background: url("../steins-gate-images/background-2.jpg") no-repeat center center fixed;
   background-size: cover;
-  box-shadow: 10px 10px  30px inset rgba(0, 0, 0, 0.635);
+  box-shadow: 10px 10px  30px inset #000000a2;
+  
   margin: 0 auto;
   padding: 10px;
 }
+
 
 div#newsletter {
   transition: background 0.8s; 
@@ -138,20 +146,19 @@ div#newsletter {
 
   position: relative;
   left: 5%;
-  top: 19%;
   padding: 20px;
-  margin: 180px 0px 30px;
+  margin: 180px 0px 60px;
 
   width: 35vw;
   max-width: 400px;
-  min-width: 260px;
+  min-width: 310px;
 
   height: 40vh;
   min-height: 380px;
 }
 
 div#newsletter:hover {
-  background: rgba(0, 0, 0, 0.866);
+  background: #000000dd;
 }
 
 
@@ -165,6 +172,7 @@ input#email-newsletter {
   max-width: 280px;
 }
 
+
 button#button-newsletter {
   color: rgb(0, 0, 0);
   border-radius: 10px;
@@ -177,7 +185,10 @@ button#button-newsletter {
   padding: 9px;
 }
 
+/* Classes para alterar as opções de cores do Newsletter */
+
 .gold-color {
+  transition: all 1s;
   background: #fffad9;
 }
 
@@ -191,8 +202,8 @@ button#button-newsletter {
 }
 
 
-
 .white-color {
+  transition: all 0.5s;
   background:#C2C2C2;
 }
 
@@ -352,6 +363,8 @@ div.character:hover {
   transition: none;
   background: black;
 }
+
+
 
 section#wallpapers {
   display: flex;
@@ -636,11 +649,11 @@ nav#contact a:hover {
 
 
   div#newsletter{
-    margin: 40px auto;
+    margin: 70px auto;
     left: 0%;
     width: 75%;
-    min-width: 245px;
-    max-width: 450px;
+    min-width: 225px;
+    max-width: 400px;
   }
 
 
@@ -710,7 +723,7 @@ nav#contact a:hover {
     height: 25vh;
     min-height: 200px;
 
-    width: 70vw;
+    width: 74vw;
     min-width: 0px;
     max-width: 550px;
   }
@@ -726,7 +739,7 @@ nav#contact a:hover {
     height: 25vh;
     min-height: 200px;
 
-    width: 70vw;
+    width: 74vw;
     min-width: 0px;
     max-width: 550px;
   }
@@ -736,7 +749,7 @@ nav#contact a:hover {
     height: 25vh;
     min-height: 200px;
 
-    width: 70vw;
+    width: 74vw;
     min-width: 0px;
     max-width: 550px;
   }
