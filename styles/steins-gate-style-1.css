@@ -296,7 +296,7 @@ div.characters {
 div.character {
   transition: all 0.5s;
 
-  background: rgba(0, 0, 0, 0.423);
+  background: #0000006c;
   border-radius: 10px;
   
   grid-area: "image";
@@ -310,10 +310,24 @@ div.character {
   
 }
 
+h1.character-name {
+  color: #ffffff;
+  background-color: #0000006c;
+  border-radius: 0px 0px 7px 7px;
+  width: 100%;
+  padding: 3px;
+  font-size: 20px;
+  text-align: center;
+  font-variant: none;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1000;
+}
+
 
 div.character img {
   transition: all 1s;
-
+  
   border-radius: 10px;
 
   position: absolute;
