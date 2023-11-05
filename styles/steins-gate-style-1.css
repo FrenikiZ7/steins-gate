@@ -311,7 +311,7 @@ div.character {
 }
 
 h1.character-name {
-  color: #ffffff;
+  color: #e7e7e7;
   background-color: #0000006c;
   border-radius: 0px 0px 7px 7px;
   width: 100%;
@@ -750,8 +750,10 @@ nav#contact a:hover {
 
 
   div.buttons {
-    font-size: 30px;
-    width: 40px;
+    font-size: 25px;
+    width: 35px;
+    color: white;
+    background: rgba(0, 0, 0, 0.350);
   }
 
 
